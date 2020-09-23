@@ -21,14 +21,14 @@ $.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/og
 ```
 
 # Uyarı ve notlar
-**Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**
+**Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
 **Öğrenci** scripti: son güncellemeden sonra **test edilmedi**
 
 **Chrome & Firefox eklentisi: yakında!**
 
 [@bytescreator](https://github.com/bytescreator) başta olmak üzere yardımcı olan herkese çok teşekkürler!
 
-Bu script eskiden bir gist idi. Bazı hataların çözümü için yorumları okumak isterseniz:
+Bu script eskiden bir gist idi. Bazı hataların çözümü için yorumları okumak isterseniz:<br>
 https://gist.github.com/sh4dowb/9ecdc521c7323411f3294d5126a2bfde
 
 
