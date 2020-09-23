@@ -6,6 +6,7 @@ EBA, canlı dersleri için Zoom kullanıyor. Fakat dersleri kendi logosu olan uy
 _Bu kod EBA'dan bağımsızdır, herhangi bir hak sahipliği yoktur, kendi sorumluluğunuzda kullanınız. Herhangi bir credit vermeden istediğiniz şekilde değiştirip kullanabilirsiniz._
 
 # Nasıl Kullanılır?
+- Zoom'u kurun.
 - https://ders.eba.gov.tr/ders/ linkine giriş yapın, `Canlı Dersler` sekmesine gelin.
 - `F12` tuşuna basın, `Console` sekmesine gelin
 - Aşağıdan size uygun olan kodu yapıştırın:
