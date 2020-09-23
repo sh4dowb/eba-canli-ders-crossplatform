@@ -26,7 +26,7 @@ $.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/og
 
 **Chrome & Firefox eklentisi: yakında!**
 
-@bytescreator başta olmak üzere yardımcı olan herkese çok teşekkürler!
+[@bytescreator](https://github.com/bytescreator) başta olmak üzere yardımcı olan herkese çok teşekkürler!
 
 Bu script eskiden bir gist idi. Bazı hataların çözümü için yorumları okumak isterseniz:
 https://gist.github.com/sh4dowb/9ecdc521c7323411f3294d5126a2bfde
