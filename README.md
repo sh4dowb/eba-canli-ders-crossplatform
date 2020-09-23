@@ -12,12 +12,12 @@ _Bu kod EBA'dan bağımsızdır, herhangi bir hak sahipliği yoktur, kendi sorum
 
 **Öğrenciler:**
 ```
-$.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/ogrenci.js");`
+$.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/ogrenci.js");
 ```
 
 **Öğretmenler:**
 ```
-$.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/ogretmen.js");`
+$.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/ogretmen.js");
 ```
 
 # Uyarı ve notlar
