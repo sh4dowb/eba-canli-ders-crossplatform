@@ -3,7 +3,7 @@ Bu script ile EBA canlı dersi Linux, Mac ve Zoom'un çalıştığı diğer işl
 
 EBA, canlı dersleri için Zoom kullanıyor. Fakat dersleri kendi logosu olan uygulamasından başlatmak için, diğer işletim sistemlerinde kullanımı engelliyor. Bu script ile direk Zoom uygulamasını başlatabilirsiniz.
 
-_Bu kod EBA'dan bağımsızdır, herhangi bir hak sahipliği yoktur, kendi sorumluluğunuzda kullanınız. Herhangi bir credit vermeden istediğiniz şekilde değiştirip kullanabilirsiniz._
+_Bu kod EBA'dan bağımsızdır, herhangi bir hak sahipliği yoktur, kendi sorumluluğunuzda kullanınız. GNU General Public License v2.0 altında kullanabilirsiniz._
 
 # Nasıl Kullanılır?
 ## 1. yol: scripti konsoldan kullanın
