@@ -22,9 +22,10 @@ $.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/og
 
 # Uyarı ve notlar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
-**Öğrenci** scripti: son güncellemeden sonra **test edilmedi**
-
+**Öğrenci** scripti: son güncellemeden sonra **test edilmedi**<br>
 **Chrome & Firefox eklentisi: yakında!**
+
+EBA'ya her girişinizde kodu çalıştırmanız gerekli. Eklenti hazır olduğunda 1 kere kurmanız yetecektir.
 
 [@bytescreator](https://github.com/bytescreator) başta olmak üzere yardımcı olan herkese çok teşekkürler!
 
