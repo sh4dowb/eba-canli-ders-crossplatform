@@ -45,5 +45,4 @@ https://gist.github.com/sh4dowb/9ecdc521c7323411f3294d5126a2bfde
 
 
 # İletişim
-Issue açarak, ya da cagriari@pm.me veya https://t.me/ üzerinden benimle iletişime geçebilirsiniz.
-
+Issue açarak, ya da cagriari@pm.me veya https://t.me/cagri üzerinden benimle iletişime geçebilirsiniz.
