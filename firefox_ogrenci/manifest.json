@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "EBA Canlı Ders Crossplatform (ÖĞRENCİ)",
+  "version": "1.1",
+  "applications": {
+    "gecko": {
+      "id": "eba-crossplatform@cagriari.com"
+    }
+  },
+
+  "description": "EBA canlı ders için crossplatform desteği (öğrenciler için) - https://github.com/sh4dowb/eba-canli-ders-crossplatform",
+
+  "icons": {
+    "256": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://ders.eba.gov.tr/ders/proxy/*"],
+      "js": ["jquery-3.5.1.min.js", "eba.js"]
+    }
+  ]
+}
+
