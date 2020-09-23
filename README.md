@@ -1,3 +1,4 @@
+
 # EBA canlı ders crossplatform (Linux & Mac) desteği
 Bu script ile EBA canlı dersi Linux, Mac ve Zoom'un çalıştığı diğer işletim sistemleri üzerinde çalıştırabilirsiniz.
 
@@ -6,6 +7,7 @@ EBA, canlı dersleri için Zoom kullanıyor. Fakat dersleri kendi logosu olan uy
 _Bu kod EBA'dan bağımsızdır, herhangi bir hak sahipliği yoktur, kendi sorumluluğunuzda kullanınız. Herhangi bir credit vermeden istediğiniz şekilde değiştirip kullanabilirsiniz._
 
 # Nasıl Kullanılır?
+## 1. yol: scripti konsoldan kullanın
 - Zoom'u kurun.
 - https://ders.eba.gov.tr/ders/ linkine giriş yapın, `Canlı Dersler` sekmesine gelin.
 - `F12` tuşuna basın, `Console` sekmesine gelin
@@ -21,12 +23,16 @@ $.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/og
 $.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/ogretmen.js");
 ```
 
+## 2. yol: Firefox'a eklenti kurun
+Öğrenciler için eklenti: https://addons.mozilla.org/en-US/firefox/addon/eba-canli-ders-ogrenciler/<br>
+Öğretmenler için eklenti: https://addons.mozilla.org/en-US/firefox/addon/eba-canli-ders-ogretmen/<br>NOT: daha Firefox'da yayınlanmadı. kaynak kodu indirip, zip'leyip, "debug" modda kurabilirsiniz.
+
 # Uyarı ve notlar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
 **Öğrenci** scripti: son güncellemeden sonra **test edilmedi**<br>
-**Chrome & Firefox eklentisi: yakında!**
+**Firefox** eklentisi: **yayınlanmadı**, **test edilmedi**
 
-EBA'ya her girişinizde kodu çalıştırmanız gerekli. Eklenti hazır olduğunda 1 kere kurmanız yetecektir.
+EBA'ya her girişinizde kodu çalıştırmanız gerekli. Eklentiyi ise 1 kere kurmanız yetecektir.
 
 [@bytescreator](https://github.com/bytescreator) başta olmak üzere yardımcı olan herkese çok teşekkürler!
 
