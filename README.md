@@ -24,17 +24,17 @@ $.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/og
 
 ## 2. yol: Firefox'a eklenti kurun
 Öğrenciler için eklenti: https://addons.mozilla.org/en-US/firefox/addon/eba-canli-ders-ogrenciler/<br>
-Öğretmenler için eklenti: https://addons.mozilla.org/en-US/firefox/addon/eba-canli-ders-ogretmen/<br>NOT: daha Firefox'da yayınlanmadı. kaynak kodu indirip, zip'leyip, "debug" modda kurabilirsiniz.
+NOT: daha Firefox'da yayınlanmadı. kaynak kodu indirip, zip'leyip, "debug" modda kurabilirsiniz.
 
 # Uyarı, notlar ve yapılacaklar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
 **Öğrenci** scripti: son güncellemeden sonra **test edilmedi**<br>
-**Firefox** eklentisi: **yayınlanmadı**, **test edilmedi**
+**Firefox** eklentisi: **yayınlanmadı**
 
 ## Yapılacaklar:
-- Öğrenci için testler (özellikle lacivert ekran ve 11 / 12. sınıflar), Firefox eklentileri için testler
-- Öğrenci için ders başlamadıysa hata yakalanıp uyarı verilecek
-- Firefox eklentisine ikon eklenip, her sayfa yerine sadece tıklandığında scriptin çalışması sağlanacak
+- ~Öğrenci için testler~ (~özellikle lacivert ekran~ ve 11 / 12. sınıflar), ~Firefox eklentileri için testler~
+- Öğrenci için ders başlamadıysa hata yakalanıp uyarı verilecek (lacivert ekranda tamamlandı)
+- ~Firefox eklentisine ikon eklenip, her sayfa yerine sadece tıklandığında scriptin çalışması sağlanacak~
 
 EBA'ya her girişinizde kodu çalıştırmanız gerekli. Eklentiyi ise 1 kere kurmanız yetecektir.
 
