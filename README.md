@@ -23,12 +23,12 @@ $.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/og
 ```
 
 ## 2. yol: Firefox'a eklenti kurun
-Öğrenciler için eklenti: https://addons.mozilla.org/en-US/firefox/addon/eba-canli-ders-ogrenciler/<br>
+Öğrenciler için eklenti: https://addons.mozilla.org/en-US/firefox/addon/eba-canli-ders-crossplatform/<br>
 NOT: daha Firefox'da yayınlanmadı. kaynak kodu indirip, zip'leyip, "debug" modda kurabilirsiniz.
 
 # Uyarı, notlar ve yapılacaklar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
-**Öğrenci** scripti: son güncellemeden sonra **test edilmedi**<br>
+**Öğrenci** scripti: **24.09.2020 itibariyle çalışıyor**<br>
 **Firefox** eklentisi: **yayınlanmadı**
 
 ## Yapılacaklar:
