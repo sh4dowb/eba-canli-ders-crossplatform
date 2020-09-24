@@ -32,7 +32,7 @@ function startEba(){
 		                    },
 		                    dataType: "json",
 		                    success: function(resp2) {
-		                        window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
+		                        window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp2.meeting.token);
 		                    }
 		                });
 		            }
@@ -90,7 +90,7 @@ function startEba(){
 		                },
 		                dataType: "json",
 		                success: function(resp2) {
-		                    window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
+		                    window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp2.meeting.token);
 		                }
 		            });
 		        }
@@ -148,7 +148,7 @@ function startEba(){
 		      },
 		      dataType : "json",
 		      success : function(resp2) {
-		        window.location = resp2.meeting.url + "?zak=" + resp2.meeting.token;
+		        window.location = encodeURI(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp2.meeting.token);
 		      }
 		    });
 		  }
