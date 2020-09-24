@@ -41,7 +41,8 @@ function doStart(resp,middleWare) {
     },
     dataType : "json",
     success : function(resp2) {
-      window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
+      if(resp2.operationMessage != 'studytimenotstarted') window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
+      else alert('Dersiniz daha başlamamış.');
     }
   });
 }
