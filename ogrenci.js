@@ -1,5 +1,4 @@
 if (window.location.toString().includes("liveMiddleware")) {
-
     $.ajax({
         url: "https://ders.eba.gov.tr/ders/getlivelessoninfo",
         method: "GET",
@@ -13,25 +12,28 @@ if (window.location.toString().includes("liveMiddleware")) {
         },
         dataType: "json",
         success: function(resp) {
-            $.ajax({
-                url: "https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join",
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                    "Accept": "json"
-                },
-                data: "studytimeid=" + resp.liveLessonInfo.studyTime.studyTimeId + "&tokentype=ttt&platform=windows",
-                withCredentials: true,
-                crossDomain: true,
-                xhrFields: {
-                    withCredentials: true
-                },
-                dataType: "json",
-                success: function(resp2) {
-                    window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
-                }
-            });
-
+            if(resp.liveLessonInfo.studyTime == null)
+                alert('aktif canlı ders yok');
+            else {
+                $.ajax({
+                    url: "https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join",
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                        "Accept": "json"
+                    },
+                    data: "studytimeid=" + resp.liveLessonInfo.studyTime.studyTimeId + "&tokentype=ttt&platform=windows",
+                    withCredentials: true,
+                    crossDomain: true,
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    dataType: "json",
+                    success: function(resp2) {
+                        window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
+                    }
+                });
+            }
         }
     });
 } else {
