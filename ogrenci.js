@@ -1,4 +1,4 @@
-function doStart(resp,middleWare) {
+function doStart(resp,middleWare,isTeacher) {
   if(!middleWare){
     var result = resp.studyTimeList;
     var dersler = [];
@@ -31,7 +31,7 @@ function doStart(resp,middleWare) {
     },
     data : {
       "studytimeid" : ders,
-      "tokentype" : "asd",
+      "tokentype" : isTeacher ? 'zak' : "asd",
       "platform": "",
     },
     withCredentials : true,
@@ -48,7 +48,7 @@ function doStart(resp,middleWare) {
 }
 
 $.ajax({
-  url : "https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService//studytime/getstudentstudytime",
+  url : "https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService//studytime/getteacherstudytime",
   method : "POST",
   headers : {
     "Content-Type" : "application/x-www-form-urlencoded",
@@ -61,18 +61,41 @@ $.ajax({
     withCredentials : true
   },
   dataType : "json",
-  success : (resp) => doStart(resp,false),
+  success : (resp) => {
+    if(resp.success) doStart(resp,false,true);
+    else {
+      $.ajax({
+        url : 'https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService//studytime/getstudentstudytime',
+        method : "POST",
+        headers : {
+          "Content-Type" : "application/x-www-form-urlencoded",
+          "Accept" : "json"
+        },
+        data : "status=1&type=2&pagesize=25&pagenumber=0",
+        withCredentials : true,
+        crossDomain : true,
+        xhrFields : {
+          withCredentials : true
+        },
+        dataType : "json",
+        success : (resp) => doStart(resp,false,false)
+      });
+    }
+  },
   error: (e) => {
-    $.ajax({
-      url : 'https://ders.eba.gov.tr/ders/getlivelessoninfo',
-      method : 'GET',
-      withCredentials : true,
-      crossDomain : true,
-      xhrFields : {
-        withCredentials : true
-      },
-      dataType : 'json',
-      success : (resp) => doStart(resp,true)
-    });
+    if(e.status == 403) {
+      $.ajax({
+        url : 'https://ders.eba.gov.tr/ders/getlivelessoninfo',
+        method : 'GET',
+        withCredentials : true,
+        crossDomain : true,
+        xhrFields : {
+          withCredentials : true
+        },
+        dataType : 'json',
+        success : (resp) => doStart(resp,true,false)
+      });
+    }
+    else alert('Ders bilgisi alınırken hata oluştu.');
   }
 });
