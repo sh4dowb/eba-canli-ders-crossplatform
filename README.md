@@ -28,12 +28,10 @@ https://cagriari.com/eba.xpi adresinden indirip, EBA'da canlı ders ekranında s
 # Uyarı, notlar ve yapılacaklar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
 **Öğrenci** scripti: **24.09.2020 itibariyle çalışıyor**<br>
-**Firefox** eklentisi v1.2: **test edilmedi**
+**Firefox** eklentisi v1.4: **test edilmedi**
 
 ## Yapılacaklar:
-- ~Öğrenci için testler~ (~özellikle lacivert ekran~ ve 11 / 12. sınıflar), Firefox eklentileri (v1.2) için testler
-- Öğrenci için ders başlamadıysa hata yakalanıp uyarı verilecek (lacivert ekranda tamamlandı)
-- ~Firefox eklentisine ikon eklenip, her sayfa yerine sadece tıklandığında scriptin çalışması sağlanacak~
+- Chrome eklentisi
 
 EBA'ya her girişinizde kodu çalıştırmanız gerekli. Eklentiyi ise 1 kere kurmanız yetecektir.
 
