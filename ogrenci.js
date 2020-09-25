@@ -12,7 +12,7 @@ if (window.location.toString().includes("liveMiddleware")) {
         },
         dataType: "json",
         success: function(resp) {
-            if(resp.liveLessonInfo.studyTime == null)
+            if (resp.liveLessonInfo.studyTime == null)
                 alert('aktif canlı ders yok');
             else {
                 $.ajax({
@@ -30,6 +30,10 @@ if (window.location.toString().includes("liveMiddleware")) {
                     },
                     dataType: "json",
                     success: function(resp2) {
+                        if (resp2.success == false) {
+                            alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
+                            return;
+                        }
                         window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
                     }
                 });
@@ -88,10 +92,10 @@ if (window.location.toString().includes("liveMiddleware")) {
                 },
                 dataType: "json",
                 success: function(resp2) {
-		            if (resp2.success == false) {
-		                alert("bir hata oluştu: "+resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
-		                return;
-		            }
+                    if (resp2.success == false) {
+                        alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
+                        return;
+                    }
                     window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
                 }
             });
