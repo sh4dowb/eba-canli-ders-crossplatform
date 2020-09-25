@@ -30,11 +30,11 @@ Eklentiyi kurduktan sonra EBA'da canlı ders ekranında sağ üstten ikona tıkl
 
 # Uyarı, notlar ve yapılacaklar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
-**Öğrenci** scripti: **24.09.2020 itibariyle çalışıyor**<br>
-**Firefox & Chrome** eklentisi v1.5: **test edilmedi**
+**Öğrenci** scripti: **25.09.2020 itibariyle çalışıyor**<br>
+**Firefox & Chrome** eklentisi v1.6: **25.09.2020 itibariyle çalışıyor**<br>
 
 ## Yapılacaklar:
-- şuanlık yok
+- Öğretmenler için Google Analytics event'i yollanacak, yoksa ders yapılmış sayılmıyor
 
 EBA'ya her girişinizde kodu çalıştırmanız gerekli. Eklentiyi ise 1 kere kurmanız yetecektir.
 
