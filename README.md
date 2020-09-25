@@ -23,8 +23,8 @@ $.getScript("https://cagriari.com/eba-ogretmen.js");
 ```
 
 ## 2. yol: Firefox / Chrome'a eklenti kurun
-Eklentiyi kurduktan sonra EBA'da canlı ders ekranında sağ üstten ikona tıklayarak kullanabilirsiniz.
-Firefox için https://cagriari.com/eba.xpi linkine tıklayınız.
+Eklentiyi kurduktan sonra EBA'da canlı ders ekranında sağ üstten ikona tıklayarak kullanabilirsiniz.<br>
+Firefox için https://cagriari.com/eba.xpi linkine tıklayınız.<br>
 Chrome için https://cagriari.com/eba.crx linkinden indirin, Chrome'da Extensions sayfasına gelin, sağ üstten "Developer Mode"u açın, indirdiğiniz eba.crx'i sayfaya sürükleyin ve kurun.
 
 
