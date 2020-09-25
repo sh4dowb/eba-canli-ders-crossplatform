@@ -88,6 +88,10 @@ if (window.location.toString().includes("liveMiddleware")) {
                 },
                 dataType: "json",
                 success: function(resp2) {
+		            if (resp2.success == false) {
+		                alert("bir hata oluştu: "+resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
+		                return;
+		            }
                     window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
                 }
             });
