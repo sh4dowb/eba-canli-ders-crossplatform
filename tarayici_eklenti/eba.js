@@ -37,7 +37,7 @@ function startEba() {
                                     return;
                                 }
 
-                                window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp2.meeting.token);
+                                window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp2.meeting.token).replace('%26pwd%3D', '&pwd=');
                             }
                         });
                     }
@@ -100,7 +100,7 @@ function startEba() {
                                 return;
                             }
 
-                            window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp2.meeting.token);
+                            window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp2.meeting.token).replace('%26pwd%3D', '&pwd=');
                         }
                     });
                 }
@@ -163,7 +163,7 @@ function startEba() {
                             return;
                         }
 
-                        window.location = encodeURI(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp2.meeting.token);
+                        window.location = encodeURI(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp2.meeting.token).replace('%26pwd%3D', '&pwd=');
                     }
                 });
             }
