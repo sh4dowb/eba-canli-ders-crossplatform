@@ -34,7 +34,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                             alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
                             return;
                         }
-                        window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
+                        window.open(resp2.meeting.url + "?tk=" + resp2.meeting.token, '_blank')
                     }
                 });
             }
@@ -96,7 +96,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                         alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
                         return;
                     }
-                    window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
+                    window.(resp2.meeting.url + "?tk=" + resp2.meeting.token, '_blank')
                 }
             });
         }
