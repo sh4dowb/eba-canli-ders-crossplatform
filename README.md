@@ -23,16 +23,15 @@ $.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/og
 ```
 
 ## 2. yol: Firefox'a eklenti kurun
-Öğrenciler için eklenti: https://addons.mozilla.org/en-US/firefox/addon/eba-canli-ders-crossplatform/<br>
-NOT: daha Firefox'da yayınlanmadı. https://cagriari.com/eba.xpi adresinden indirip, "debug" modda kurabilirsiniz.
+https://cagriari.com/eba.xpi adresinden indirip, EBA'da canlı ders ekranında sağ üstten ikona tıklayarak kullanabilirsiniz.
 
 # Uyarı, notlar ve yapılacaklar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
 **Öğrenci** scripti: **24.09.2020 itibariyle çalışıyor**<br>
-**Firefox** eklentisi: **yayınlanmadı**
+**Firefox** eklentisi v1.2: **test edilmedi**
 
 ## Yapılacaklar:
-- ~Öğrenci için testler~ (~özellikle lacivert ekran~ ve 11 / 12. sınıflar), ~Firefox eklentileri için testler~
+- ~Öğrenci için testler~ (~özellikle lacivert ekran~ ve 11 / 12. sınıflar), Firefox eklentileri (v1.2) için testler
 - Öğrenci için ders başlamadıysa hata yakalanıp uyarı verilecek (lacivert ekranda tamamlandı)
 - ~Firefox eklentisine ikon eklenip, her sayfa yerine sadece tıklandığında scriptin çalışması sağlanacak~
 
