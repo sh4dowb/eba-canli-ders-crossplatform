@@ -66,7 +66,7 @@ function startEba() {
                     for (var i in result) {
                         if ((new Date).getTime() + 18000000 > result[i].startdate) {
                             dersler.push(result[i]);
-                            dersText = dersText + (id.toString() + ") " + result[i].title + " (" + result[i].ownerName + " "+result[i].ownerSurname+")\n");
+                            dersText = dersText + (id.toString() + ") " + result[i].title + " (" + result[i].classroom + ")\n");
                             id = id + 1;
                         }
                     }

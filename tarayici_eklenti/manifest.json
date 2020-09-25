@@ -1,13 +1,8 @@
 {
   "manifest_version": 2,
   "name": "EBA Canlı Ders Crossplatform",
-  "version": "1.4",
+  "version": "1.5",
   "permissions":["tabs", "activeTab", "*://*.eba.gov.tr/*"],
-  "applications": {
-    "gecko": {
-      "id": "eba-crossplatform@cagriari.com"
-    }
-  },
 
   "description": "EBA canlı ders için crossplatform desteği - https://github.com/sh4dowb/eba-canli-ders-crossplatform",
 
@@ -32,3 +27,4 @@
       "scripts": ["background.js"]
     }
 }
+

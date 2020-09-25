@@ -22,16 +22,16 @@ $.getScript("https://cagriari.com/eba-ogrenci.js");
 $.getScript("https://cagriari.com/eba-ogretmen.js");
 ```
 
-## 2. yol: Firefox'a eklenti kurun
+## 2. yol: Firefox / Chrome'a eklenti kurun
 https://cagriari.com/eba.xpi adresinden indirip, EBA'da canlı ders ekranında sağ üstten ikona tıklayarak kullanabilirsiniz.
 
 # Uyarı, notlar ve yapılacaklar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
 **Öğrenci** scripti: **24.09.2020 itibariyle çalışıyor**<br>
-**Firefox** eklentisi v1.4: **test edilmedi**
+**Firefox & Chrome** eklentisi v1.5: **test edilmedi**
 
 ## Yapılacaklar:
-- Chrome eklentisi
+- şuanlık yok
 
 EBA'ya her girişinizde kodu çalıştırmanız gerekli. Eklentiyi ise 1 kere kurmanız yetecektir.
 
