@@ -14,12 +14,12 @@ _Bu kod EBA'dan bağımsızdır, herhangi bir hak sahipliği yoktur, kendi sorum
 
 **Öğrenciler:**
 ```
-$.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform@master/ogrenci.js");
+$.getScript("https://cagriari.com/eba-ogrenci.js");
 ```
 
 **Öğretmenler:**
 ```
-$.getScript("https://cdn.jsdelivr.net/gh/sh4dowb/eba-canli-ders-crossplatform/ogretmen.js");
+$.getScript("https://cagriari.com/eba-ogretmen.js");
 ```
 
 ## 2. yol: Firefox'a eklenti kurun
