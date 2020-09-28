@@ -34,7 +34,10 @@ Eklentiyi kurduktan sonra EBA'da canlı ders ekranında sağ üstten ikona tıkl
 **Firefox & Chrome** eklentisi v1.6: **25.09.2020 itibariyle çalışıyor**<br>
 
 ## Yapılacaklar:
-- Öğretmenler için Google Analytics event'i yollanacak, yoksa ders yapılmış sayılmıyor
+- Yoklama için Google Analytics event'i(?) yollanacak.<br>
+eğer Google analytics değilse Windows uygulaması incelenecek
+- Eklentiye otomatik güncelleme (sadece Firefox) ve versiyon uyarısı eklenecek
+- encodeURIcomponent düzeltilecek (eklenti için)
 
 EBA'ya her girişinizde kodu çalıştırmanız gerekli. Eklentiyi ise 1 kere kurmanız yetecektir.
 
