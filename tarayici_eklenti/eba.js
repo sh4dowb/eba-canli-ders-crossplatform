@@ -36,11 +36,11 @@ function startEba() {
                                     alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
                                     return;
                                 }
-                                ga('send', 'event', {
+                                try{ ga('send', 'event', {
                                     eventCategory: "liveLesson",
                                     eventAction: "join",
                                     eventLabel: ""
-                                })
+                                }); }catch(a){}
                                 window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp2.meeting.token).replace('%26pwd%3D', '&pwd=');
                             }
                         });
@@ -103,11 +103,11 @@ function startEba() {
                                 alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
                                 return;
                             }
-                            ga('send', 'event', {
+                            try{ ga('send', 'event', {
                                 eventCategory: "liveLesson",
                                 eventAction: "join",
                                 eventLabel: ""
-                            })
+                            }) }catch(a){}
                             window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp2.meeting.token).replace('%26pwd%3D', '&pwd=');
                         }
                     });
