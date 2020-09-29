@@ -30,13 +30,12 @@ Eklentiyi kurduktan sonra EBA'da canlı ders ekranında sağ üstten ikona tıkl
 
 # Uyarı, notlar ve yapılacaklar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
-**Öğrenci** scripti: **25.09.2020 itibariyle çalışıyor**<br>
-**Firefox & Chrome** eklentisi v1.6: **25.09.2020 itibariyle çalışıyor**<br>
+**Öğrenci** scripti: **29.09.2020 itibariyle çalışıyor**<br>
+**Firefox & Chrome** eklentisi v1.6: **29.09.2020 itibariyle çalışıyor**<br>
 
 ## Yapılacaklar:
-- Yoklama için Google Analytics event'i(?) yollanacak.<br>
-eğer Google analytics değilse Windows uygulaması incelenecek
-- Eklentiye otomatik güncelleme (sadece Firefox) ve versiyon uyarısı eklenecek
+- Öğrenci için yoklama test edilecek. Eğer çalışmıyorsa Windows uygulaması istekleri incelenecek
+- Eklentiye otomatik güncelleme ve versiyon uyarısı eklenecek
 - encodeURIcomponent düzeltilecek (eklenti için)
 
 EBA'ya her girişinizde kodu çalıştırmanız gerekli. Eklentiyi ise 1 kere kurmanız yetecektir.
