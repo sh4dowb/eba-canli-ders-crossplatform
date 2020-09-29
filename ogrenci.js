@@ -34,6 +34,11 @@ if (window.location.toString().includes("liveMiddleware")) {
                             alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
                             return;
                         }
+                        ga('send', 'event', {
+                            eventCategory: "liveLesson",
+                            eventAction: "join",
+                            eventLabel: ""
+                        });
                         window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
                     }
                 });
@@ -63,7 +68,7 @@ if (window.location.toString().includes("liveMiddleware")) {
             for (var i in result) {
                 if ((new Date).getTime() + 18000000 > result[i].startdate) {
                     dersler.push(result[i]);
-                    dersText = dersText + (id.toString() + ") " + result[i].title + " (" + result[i].ownerName + " "+result[i].ownerSurname+")\n");
+                    dersText = dersText + (id.toString() + ") " + result[i].title + " (" + result[i].ownerName + " " + result[i].ownerSurname + ")\n");
                     id = id + 1;
                 }
             }
@@ -96,6 +101,11 @@ if (window.location.toString().includes("liveMiddleware")) {
                         alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
                         return;
                     }
+                    ga('send', 'event', {
+                        eventCategory: "liveLesson",
+                        eventAction: "join",
+                        eventLabel: ""
+                    });
                     window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
                 }
             });
