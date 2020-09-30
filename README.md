@@ -30,11 +30,12 @@ Eklentiyi kurduktan sonra EBA'da canlı ders ekranında sağ üstten ikona tıkl
 
 # Uyarı, notlar ve yapılacaklar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
-**Öğrenci** scripti: **29.09.2020 itibariyle çalışıyor**<br>
-**Firefox & Chrome** eklentisi v1.6: **29.09.2020 itibariyle çalışıyor**<br>
+**Öğrenci** scripti: **30.09.2020 itibariyle çalışıyor**<br>
+**Firefox & Chrome** eklentisi v1.7: **30.09.2020 itibariyle çalışıyor**<br>
 
 ## Yapılacaklar:
-- Öğrenci için yoklama test edilecek. Eğer çalışmıyorsa Windows uygulaması istekleri incelenecek
+- ~Öğrenci için yoklama test edilecek. Eğer çalışmıyorsa Windows uygulaması istekleri incelenecek~
+- Öğretmen için yoklama desteği eklenecek
 - Eklentiye otomatik güncelleme ve versiyon uyarısı eklenecek
 - encodeURIcomponent düzeltilecek (eklenti için)
 
