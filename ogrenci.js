@@ -39,7 +39,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                             eventAction: "join",
                             eventLabel: ""
                         }); }catch(a){}
-                        window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
+                        window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token + "&pwd=" + resp2.meeting.password;
                     }
                 });
             }
@@ -106,7 +106,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                         eventAction: "join",
                         eventLabel: ""
                     }); }catch(a){}
-                    window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token;
+                    window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token + "&pwd=" + resp2.meeting.password;
                 }
             });
         }
