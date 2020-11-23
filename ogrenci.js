@@ -15,6 +15,8 @@ if (window.location.toString().includes("liveMiddleware")) {
             if (resp.liveLessonInfo.studyTime == null)
                 alert('aktif canlı ders yok');
             else {
+                window.location = resp.liveLessonInfo.studyTime.registrantJoinUrl;
+                /*
                 $.ajax({
                     url: "https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join",
                     method: "POST",
@@ -42,6 +44,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                         window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token + "&pwd=" + resp2.meeting.password;
                     }
                 });
+                */
             }
         }
     });
