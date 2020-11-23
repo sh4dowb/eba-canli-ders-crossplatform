@@ -25,7 +25,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                             "Content-Type": "application/x-www-form-urlencoded",
                             "Accept": "json"
                         },
-                        data: "studytimeid=" + resp.liveLessonInfo.studyTime.studyTimeId + "&tokentype=ttt&platform=windows",
+                        data: "studytimeid=" + resp.liveLessonInfo.studyTime.studyTimeId + "&tokentype=noncec&platform=linux",
                         withCredentials: true,
                         crossDomain: true,
                         xhrFields: {
@@ -42,7 +42,7 @@ if (window.location.toString().includes("liveMiddleware")) {
                                 eventAction: "join",
                                 eventLabel: ""
                             }); }catch(a){}
-                            window.location = resp2.meeting.url + "?tk=" + resp2.meeting.token; // + "&pwd=" + resp2.meeting.password;
+                            window.location = resp2.meeting.url;
                         }
                     });
                 }
