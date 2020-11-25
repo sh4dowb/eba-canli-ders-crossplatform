@@ -30,8 +30,8 @@ Eklentiyi kurduktan sonra EBA'da canlı ders ekranında sağ üstten ikona tıkl
 
 # Uyarı, notlar ve yapılacaklar
 **Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
-**Öğrenci** scripti: **24.11.2020 itibariyle çalışıyor**<br>
-**Firefox & Chrome** eklentisi v1.8: **24.11.2020 itibariyle çalışıyor**<br>
+**Öğrenci** scripti: **25.11.2020 itibariyle çalışıyor**<br>
+**Firefox & Chrome** eklentisi v1.9: **25.11.2020 itibariyle çalışıyor**<br>
 
 ## Yapılacaklar:
 - Öğretmen scripti test edilecek
