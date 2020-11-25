@@ -37,6 +37,7 @@ Eklentiyi kurduktan sonra EBA'da canlı ders ekranında sağ üstten ikona tıkl
 - Öğretmen scripti eklentiye eklenecek
 - Öğretmen için yoklama desteği eklenecek
 - Eklentiye otomatik güncelleme ve versiyon uyarısı eklenecek
+- ```fetch``` kullanılırsa daha düzgün olabilir kod
 - encodeURIcomponent düzeltilecek (eklenti için)
 
 EBA'ya her girişinizde kodu çalıştırmanız gerekli. Eklentiyi ise 1 kere kurmanız yetecektir.
