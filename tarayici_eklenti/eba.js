@@ -168,8 +168,8 @@ function startEba() {
                     },
                     data: {
                         "studytimeid": ders.id,
-                        "tokentype": "zak",
-                        "platform": "",
+                        "tokentype": "nonce",
+                        "platform": "windows",
                     },
                     withCredentials: true,
                     crossDomain: true,
@@ -177,13 +177,22 @@ function startEba() {
                         withCredentials: true
                     },
                     dataType: "json",
-                    success: function(resp2) {
+                    success: function(resp2){
                         if (resp2.success == false) {
                             alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
                             return;
                         }
-
-                        window.location = encodeURI(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp2.meeting.token).replace('%26pwd%3D', '&pwd=');
+                        $.ajax({
+                            url: "https://cagriari.com/eba_nonceproxy.php?nonce="+resp2.meeting.token,
+                            success: function(resp3) {
+                                try{ ga('send', 'event', {
+                                    eventCategory: "liveLesson",
+                                    eventAction: "join",
+                                    eventLabel: ""
+                                }); }catch(a){}
+                                window.location = urlencode(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp3.substring(1).split('|')[6]).replace('%26pwd%3D', '&pwd=');
+                            }
+                        });
                     }
                 });
             }
