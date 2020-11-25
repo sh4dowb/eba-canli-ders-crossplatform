@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "EBA Canlı Ders Crossplatform",
-  "version": "1.8",
+  "version": "1.9",
   "permissions":["tabs", "activeTab", "*://*.eba.gov.tr/*"],
 
   "description": "EBA canlı ders için crossplatform desteği - https://github.com/sh4dowb/eba-canli-ders-crossplatform",
