@@ -48,8 +48,7 @@ $.ajax({
                 withCredentials: true
             },
             dataType: "json",
-            success: function(resp2) {
-                alert("debug verisi:" + JSON.stringify(resp));
+            success: function(resp2){
                 if (resp2.success == false) {
                     alert("bir hata oluştu: " + resp2.operationMessage.replace('studytimenotstarted', 'ders daha başlamadı.'));
                     return;
