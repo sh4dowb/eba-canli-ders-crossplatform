@@ -29,12 +29,12 @@ Eklentiyi kurduktan sonra EBA'da canlı ders ekranında sağ üstten ikona tıkl
 
 
 # Uyarı, notlar ve yapılacaklar
-**Öğretmen** scripti: **23.09.2020 itibariyle çalışıyor**<br>
+**Öğretmen** scripti: **25.11.2020 itibariyle çalışıyor**<br>
 **Öğrenci** scripti: **25.11.2020 itibariyle çalışıyor**<br>
 **Firefox & Chrome** eklentisi v1.9: **25.11.2020 itibariyle çalışıyor**<br>
 
 ## Yapılacaklar:
-- Öğretmen scripti test edilecek
+- Öğretmen scripti eklentiye eklenecek
 - Öğretmen için yoklama desteği eklenecek
 - Eklentiye otomatik güncelleme ve versiyon uyarısı eklenecek
 - encodeURIcomponent düzeltilecek (eklenti için)
