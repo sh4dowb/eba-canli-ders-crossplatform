@@ -48,7 +48,7 @@ function startEba() {
                                                 eventAction: "join",
                                                 eventLabel: ""
                                             }); }catch(a){}
-                                            window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp3.substring(1).split('|')[0]).replace('%26pwd%3D', '&pwd=');
+                                            window.location = resp2.meeting.url + "?tk=" + resp3.replace('"','').split('|')[0];
                                         },
                                         error: function(resp){
                                             alert("Token bilgilerini alırken bir hata oluştu.");
@@ -130,7 +130,7 @@ function startEba() {
                                         eventAction: "join",
                                         eventLabel: ""
                                     }); }catch(a){}
-                                    window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp3.substring(1).split('|')[0]).replace('%26pwd%3D', '&pwd=');
+                                    window.location = resp2.meeting.url + "?tk=" + resp3.replace('"','').split('|')[0];
                                 },
                                 error: function(resp){
                                     alert("Token bilgilerini alırken bir hata oluştu.");
@@ -214,7 +214,7 @@ function startEba() {
                                     eventAction: "join",
                                     eventLabel: ""
                                 }); }catch(a){}
-                                window.location = urlencode(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp3.substring(1).split('|')[6]).replace('%26pwd%3D', '&pwd=');
+                                window.location = resp2.meeting.url + "?zak=" + resp3.replace('"','').split('|')[0];
                             },
                             error: function(resp){
                                 alert("Token bilgilerini alırken bir hata oluştu.");
