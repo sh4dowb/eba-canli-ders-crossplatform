@@ -31,7 +31,7 @@ Eklentiyi kurduktan sonra EBA'da canlı ders ekranında sağ üstten ikona tıkl
 # Uyarı, notlar ve yapılacaklar
 **Öğretmen** scripti: **25.11.2020 itibariyle çalışıyor**<br>
 **Öğrenci** scripti: **25.11.2020 itibariyle çalışıyor**<br>
-**Firefox & Chrome** eklentisi v2.0: **25.11.2020 itibariyle çalışıyor**<br>
+**Firefox & Chrome** eklentisi v2.1: **25.11.2020 itibariyle çalışıyor**<br>
 
 ## Yapılacaklar:
 - Öğretmen için yoklama desteği test edilecek / eklenecek
