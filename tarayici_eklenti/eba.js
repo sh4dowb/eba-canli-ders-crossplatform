@@ -41,20 +41,32 @@ function startEba() {
                                     }
 
                                     $.ajax({
-                                        url: "https://cagriari.com/eba_nonceproxy.php?nonce="+encodeURIComponent(resp2.meeting.token),
+                                        url: "https://uygulama-ebaders.eba.gov.tr/FrontEndService/livelesson/nonce/"+encodeURIComponent(resp2.meeting.token),
                                         success: function(resp3) {
                                             try{ ga('send', 'event', {
                                                 eventCategory: "liveLesson",
                                                 eventAction: "join",
                                                 eventLabel: ""
                                             }); }catch(a){}
-                                            window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp3.substring(1).split('|')[0]).replace('%26pwd%3D', '&pwd=');
+                                            window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp3.replace('"','').split('|')[0]).replace('%26pwd%3D','&pwd=');
+                                        },
+                                        error: function(resp){
+                                            alert("Token bilgilerini alırken bir hata oluştu.");
+                                            console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join erişiminde hata oluştu.",resp);
                                         }
                                     });
+                                },
+                                error: function(resp){
+                                    alert("Giriş bilgilerini alırken bir hata oluştu.");
+                                    console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join erişiminde hata oluştu.",resp);
                                 }
                             });
                         }
                     }
+                },
+                error: function(resp){
+                    alert("Ders bilgilerini alırken bir hata oluştu.");
+                    console.error("https://ders.eba.gov.tr/ders/getlivelessoninfo erişiminde hata oluştu.",resp);
                 }
             });
         } else {
@@ -111,18 +123,30 @@ function startEba() {
                             }
 
                             $.ajax({
-                                url: "https://cagriari.com/eba_nonceproxy.php?nonce="+resp2.meeting.token,
+                                url: "https://uygulama-ebaders.eba.gov.tr/FrontEndService/livelesson/nonce/"+resp2.meeting.token,
                                 success: function(resp3) {
                                     try{ ga('send', 'event', {
                                         eventCategory: "liveLesson",
                                         eventAction: "join",
                                         eventLabel: ""
                                     }); }catch(a){}
-                                    window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp3.substring(1).split('|')[0]).replace('%26pwd%3D', '&pwd=');
+                                    window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp3.replace('"','').split('|')[0]).replace('%26pwd%3D','&pwd=');
+                                },
+                                error: function(resp){
+                                    alert("Token bilgilerini alırken bir hata oluştu.");
+                                    console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join erişiminde hata oluştu.",resp);
                                 }
                             });
+                        },
+                        error: function(resp){
+                            alert("Giriş bilgilerini alırken bir hata oluştu.");
+                            console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService//livelesson/instudytime/join erişiminde hata oluştu.",resp);
                         }
                     });
+                },
+                error: function(resp){
+                    alert("Ders bilgilerini alırken bir hata oluştu.");
+                    console.error("https://ders.eba.gov.tr/ders/getlivelessoninfo erişiminde hata oluştu.",resp);
                 }
             });
         }
@@ -183,18 +207,30 @@ function startEba() {
                             return;
                         }
                         $.ajax({
-                            url: "https://cagriari.com/eba_nonceproxy.php?nonce="+resp2.meeting.token,
+                            url: "https://uygulama-ebaders.eba.gov.tr/FrontEndService/livelesson/nonce/"+resp2.meeting.token,
                             success: function(resp3) {
                                 try{ ga('send', 'event', {
                                     eventCategory: "liveLesson",
                                     eventAction: "join",
                                     eventLabel: ""
                                 }); }catch(a){}
-                                window.location = urlencode(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp3.substring(1).split('|')[6]).replace('%26pwd%3D', '&pwd=');
+                                window.location = encodeURI(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp3.replace('"','').split('|')[0]).replace('%26pwd%3D','&pwd=');
+                            },
+                            error: function(resp){
+                                alert("Token bilgilerini alırken bir hata oluştu.");
+                                console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join erişiminde hata oluştu.",resp);
                             }
                         });
+                    },
+                    error: function(resp){
+                        alert("Giriş bilgilerini alırken bir hata oluştu.");
+                        console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService//livelesson/instudytime/join erişiminde hata oluştu.",resp);
                     }
                 });
+            },
+            error: function(resp){
+                alert("Ders bilgilerini alırken bir hata oluştu.");
+                console.error("https://ders.eba.gov.tr/ders/getlivelessoninfo erişiminde hata oluştu.",resp);
             }
         });
     }
