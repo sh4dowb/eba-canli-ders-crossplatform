@@ -51,8 +51,21 @@ function startEba() {
                                             window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp3.replace('"','').split('|')[0]).replace('%26pwd%3D','&pwd=');
                                         },
                                         error: function(resp){
-                                            alert("Token bilgilerini alırken bir hata oluştu.");
-                                            console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join erişiminde hata oluştu.",resp);
+                                            $.ajax({
+                                                url: "https://cagriari.com/eba_nonceproxy.php?nonce="+encodeURIComponent(resp2.meeting.token),
+                                                success: function(resp3) {
+                                                    try{ ga('send', 'event', {
+                                                        eventCategory: "liveLesson",
+                                                        eventAction: "join",
+                                                        eventLabel: ""
+                                                    }); }catch(a){}
+                                                    window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp3.replace('"','').split('|')[0]).replace('%26pwd%3D','&pwd=');
+                                                },
+                                                error: function(resp){
+                                                    alert("Token bilgilerini alırken bir hata oluştu.");
+                                                    console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join erişiminde hata oluştu.",resp);
+                                                }
+                                            });
                                         }
                                     });
                                 },
@@ -133,8 +146,21 @@ function startEba() {
                                     window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp3.replace('"','').split('|')[0]).replace('%26pwd%3D','&pwd=');
                                 },
                                 error: function(resp){
-                                    alert("Token bilgilerini alırken bir hata oluştu.");
-                                    console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join erişiminde hata oluştu.",resp);
+                                    $.ajax({
+                                        url: "https://cagriari.com/eba_nonceproxy.php?nonce="+encodeURIComponent(resp2.meeting.token),
+                                        success: function(resp3) {
+                                            try{ ga('send', 'event', {
+                                                eventCategory: "liveLesson",
+                                                eventAction: "join",
+                                                eventLabel: ""
+                                            }); }catch(a){}
+                                            window.location = encodeURI(resp2.meeting.url) + "?tk=" + encodeURIComponent(resp3.replace('"','').split('|')[0]).replace('%26pwd%3D','&pwd=');
+                                        },
+                                        error: function(resp){
+                                            alert("Token bilgilerini alırken bir hata oluştu.");
+                                            console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join erişiminde hata oluştu.",resp);
+                                        }
+                                    });
                                 }
                             });
                         },
@@ -214,11 +240,24 @@ function startEba() {
                                     eventAction: "join",
                                     eventLabel: ""
                                 }); }catch(a){}
-                                window.location = encodeURI(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp3.replace('"','').split('|')[0]).replace('%26pwd%3D','&pwd=');
+                                window.location = encodeURI(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp3.replace('"','').split('|')[6]).replace('%26pwd%3D','&pwd=');
                             },
                             error: function(resp){
-                                alert("Token bilgilerini alırken bir hata oluştu.");
-                                console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join erişiminde hata oluştu.",resp);
+                                $.ajax({
+                                    url: "https://cagriari.com/eba_nonceproxy.php?nonce="+encodeURIComponent(resp2.meeting.token),
+                                    success: function(resp3) {
+                                        try{ ga('send', 'event', {
+                                            eventCategory: "liveLesson",
+                                            eventAction: "join",
+                                            eventLabel: ""
+                                        }); }catch(a){}
+                                        window.location = encodeURI(resp2.meeting.url) + "?zak=" + encodeURIComponent(resp3.replace('"','').split('|')[6]).replace('%26pwd%3D','&pwd=');
+                                    },
+                                    error: function(resp){
+                                        alert("Token bilgilerini alırken bir hata oluştu.");
+                                        console.error("https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService/livelesson/inpage/instudytime/join erişiminde hata oluştu.",resp);
+                                    }
+                                });
                             }
                         });
                     },

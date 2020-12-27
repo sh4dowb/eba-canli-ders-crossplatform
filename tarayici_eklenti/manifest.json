@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "EBA Canlı Ders Crossplatform",
   "version": "2.1",
-  "permissions":["tabs", "activeTab", "https://*.eba.gov.tr/*"],
+  "permissions":["tabs", "activeTab", "https://*.eba.gov.tr/*","https://cagriari.com/eba_nonceproxy.php?*"],
 
   "description": "EBA canlı ders için crossplatform desteği - https://github.com/sh4dowb/eba-canli-ders-crossplatform",
 
